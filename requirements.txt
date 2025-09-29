@@ -1,0 +1,80 @@
+# MPEG-G Microbiome Classification - Python Dependencies
+# =======================================================
+#
+# This file contains all dependencies for both centralized and federated solutions
+# Install with: pip install -r requirements.txt
+#
+# Solutions:
+# - Centralized: microbiome_centralized_solution.ipynb (Local + Docker)
+# - Federated: federated_microbiome_*.ipynb (Kaggle GPU)
+
+# =====================================================
+# CORE DEPENDENCIES
+# =====================================================
+
+# Data Science Stack
+numpy>=1.24.3
+pandas>=2.0.3
+scipy>=1.11.1
+scikit-learn>=1.3.0
+
+# Machine Learning - Centralized Solution
+xgboost>=1.7.6
+
+# Machine Learning - Federated Solution
+torch>=2.0.1
+torchvision>=0.15.2
+
+# Visualization & Analysis
+matplotlib>=3.7.2
+seaborn>=0.12.2
+
+# Carbon Footprint Tracking
+codecarbon>=2.2.0
+
+# Development Environment
+jupyter>=1.0.0
+notebook>=6.5.4
+ipywidgets>=8.0.0
+
+# System Utilities
+pathlib2>=2.3.7
+psutil>=5.9.5
+tqdm>=4.65.0
+
+# =====================================================
+# INSTALLATION GUIDE
+# =====================================================
+
+# 1. Create virtual environment
+# python -m venv venv
+# source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# 2. Install all dependencies
+# pip install -r requirements.txt
+
+# 3. Additional setup for centralized solution:
+# docker pull muefab/genie:latest
+# docker pull quay.io/biocontainers/kmer-jellyfish:2.3.1--py310h184ae93_5
+
+# =====================================================
+# DOCKER IMAGES (Centralized Solution Only)
+# =====================================================
+
+# Required Docker containers for MGB processing:
+# - muefab/genie:latest (MPEG-G decompression: MGB → FASTQ)
+# - quay.io/biocontainers/kmer-jellyfish:2.3.1--py310h184ae93_5 (K-mer counting)
+
+# =====================================================
+# ENVIRONMENT COMPATIBILITY
+# =====================================================
+
+# Centralized Solution:
+# - OS: Windows 10/11 (with Docker Desktop) or Linux
+# - Memory: 8GB RAM minimum (16GB recommended)
+# - Runtime: ~27 hours total (25+ hours for MGB processing)
+
+# Federated Solution:
+# - Platform: Kaggle GPU kernels (recommended)
+# - Many packages pre-installed on Kaggle
+# - Runtime: ~34 minutes total

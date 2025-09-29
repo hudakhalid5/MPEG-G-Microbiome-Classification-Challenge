@@ -1,0 +1,214 @@
+# MPEG-G Microbiome Classification - Git Ignore Rules
+# ====================================================
+
+# =====================================================
+# DATA FILES (Large files should not be committed)
+# =====================================================
+
+# Original competition data
+TrainFiles.zip
+TestFiles.zip
+Train.csv
+
+# Extracted MGB files (thousands of files, ~GB in size)
+TrainFiles/
+TestFiles/
+
+# Generated k-mer matrices (large CSV files)
+kmer_train/train_kmercount.csv
+kmer_test/test_kmercount.csv
+
+# Individual processing results (can be regenerated)
+kmer_train/results/
+kmer_test/results/
+kmer_train/temp/
+kmer_test/temp/
+
+# Checkpoint files (temporary processing state)
+*_checkpoint.json
+
+# Submission files (can be regenerated)
+submissions/
+submission_*.csv
+
+# =====================================================
+# PYTHON ENVIRONMENT
+# =====================================================
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# =====================================================
+# JUPYTER NOTEBOOK
+# =====================================================
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# =====================================================
+# SYSTEM FILES
+# =====================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =====================================================
+# DEVELOPMENT TOOLS
+# =====================================================
+
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# PyCharm
+.idea/
+*.swp
+*.swo
+
+# Spyder
+.spyderproject
+.spyproject
+
+# =====================================================
+# LARGE TEMPORARY FILES
+# =====================================================
+
+# Docker temporary files (if any leak outside containers)
+*.fastq
+*.jf
+*_temp.*
+
+# Large visualization files (keep smaller versions)
+*.png
+*.jpg
+*.jpeg
+*.pdf
+!microbiome_*.png  # Keep analysis visualizations
+
+# Log files
+*.log
+logs/
+
+# =====================================================
+# CONFIGURATION & SECRETS
+# =====================================================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Configuration files with secrets
+config.json
+secrets.json
+*.key
+*.pem
+
+# =====================================================
+# EXCEPTIONS (Files to keep in repository)
+# =====================================================
+
+# Keep these important files
+!README.md
+!requirements.txt
+!carbon_tracking.md
+!carbon_tracking/emissions.csv
+!*.ipynb
+!.gitignore
+
+# Keep small example data files (if any)
+!examples/
+!sample_data/
+
+# Keep documentation images
+!docs/
+!images/
+!figures/
