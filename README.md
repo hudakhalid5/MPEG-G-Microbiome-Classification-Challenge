@@ -38,7 +38,7 @@ This solution was developed for the **[MPEG-G Microbiome Classification challeng
 - **Data Format**: MPEG-G compressed genomic sequences (.mgb files)
 - **Objective**: Multi-class classification (4 body sites)
 - **Evaluation Metric**: Logarithmic Loss
-- **Final Ranking**: 12th place on private leaderboard
+- **Final Ranking**: 8th place on private leaderboard
 
 ## 🎯 Project Structure
 
@@ -736,5 +736,6 @@ For questions about implementation details or reproduction of results:
 ---
 
 *Generated with comprehensive analysis of both microbiome classification solutions - Centralized and Federated approaches for MPEG-G challenge.*
+
 
 
