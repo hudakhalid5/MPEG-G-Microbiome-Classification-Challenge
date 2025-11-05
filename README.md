@@ -6,7 +6,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0.1-red.svg)](https://pytorch.org/)
 [![Carbon Tracking](https://img.shields.io/badge/carbon-tracked-green.svg)](https://codecarbon.io/)
 
-Two comprehensive machine learning approaches for microbiome classification using MPEG-G compressed genomic data, achieving **12th place** on the private leaderboard with both centralized and federated learning solutions.
+Two comprehensive machine learning approaches for microbiome classification using MPEG-G compressed genomic data, achieving **8th place** on the private leaderboard with both centralized and federated learning solutions.
 
 ## 🏆 Competition Results
 - **Centralized Solution**: Log Loss 0.0322 ± 0.0206 (12th private leaderboard: 0.0266)
@@ -736,6 +736,7 @@ For questions about implementation details or reproduction of results:
 ---
 
 *Generated with comprehensive analysis of both microbiome classification solutions - Centralized and Federated approaches for MPEG-G challenge.*
+
 
 
 
